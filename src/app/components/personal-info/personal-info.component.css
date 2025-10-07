@@ -51,10 +51,10 @@ p {
 
 .content {
     /* display: flex; */
-    top: 40vh;
-    left: 40vw;
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute;
+    /* top: 40vh; */
+    /* left: 20vw; */
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* position: absolute; */
     /* align-self: center; */
     /* Vertical centering */
     /* justify-content: center; */
@@ -63,19 +63,32 @@ p {
 }
 
 .container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 20px; */
+
+    display: grid;
+      gap: 1.25rem;
+      /* 2 columns on medium+, 1 column on narrow */
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+      width: min(980px, 100%);         /* caps the grid width nicely */
+      align-items: stretch;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    /* height: 100vh; */
 }
 
 .card {
-    width: 22vw;
-    height: 10vh;
+    width: fit-content;
+    height:fit-content;
     background-color: #4caf50;
     color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     cursor: pointer;
     transition: .5s;
     border-radius: 20px;
