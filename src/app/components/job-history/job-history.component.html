@@ -1,0 +1,97 @@
+<div class="work-experience-content">
+    <!-- <h1>Work Experience</h1>
+    <div class="work-item">
+        <div class="waters-experience">
+            <ul>
+                <h2>Telus International</h2>
+    <li>
+    <div class="item item-hover-animate">
+                    <div class="circle item-hover-animate">
+                    </div>
+                    <p class="working-period-and-position item-hover-animate">
+                        <strong>
+                            01/10/2024 &#8594; Present --- Software Developer
+                        </strong>
+                    </p>
+                </div>
+    <div class="container">
+                    <div class="box box1">Hover over me (A)</div>
+                    <div class="box box2">I animate (B)</div>
+                </div>
+    </li>
+    <p>Implemented touchscreen and web applications in Angular for a high-performance liquid chromatography
+                    (HPLC)
+                    system</p>
+                <p>For a short demo of the HPLC system click <a
+                        href="https://www.youtube.com/watch?v=K2uMtS6UegI">HERE</a></p>
+    <h2>S.C. Waters Romania S.R.L.</h2>
+                <div class="item item-hover-animate">
+                    <div class="circle item-hover-animate">
+                    </div>
+                    <p class="working-period-and-position item-hover-animate">
+                        <strong>01/08/2022 &#8594; 31/07/2024 --- Software
+                            Developer</strong>
+                    </p>
+                </div>
+                <div class="item item-hover-animate">
+                    <div class="circle item-hover-animate">
+                    </div>
+                    <p class="working-period-and-position item-hover-animate">
+                        <strong>21/02/2022 &#8594; 31/07/2022 --- Software Developer
+                            (Internship)</strong>
+                    </p>
+                </div>
+                <p>Implemented touchscreen and web applications in Angular for a high-performance liquid
+                    chromatography
+                    (HPLC)
+                    system</p>
+                <p>For a short demo of the HPLC system click <a
+                        href="https://www.youtube.com/watch?v=K2uMtS6UegI">HERE</a></p>
+            </ul>
+        </div>
+    </div>
+    <div class="demo-work">
+        <img class="img-hplc"
+            src="https://www.waters.com/content/dam/waters/en/Photography/Products/Instruments/Separations/uplc/alliance-is-hplc-system/alliance-is-system-with-bottles-angled.jpg.82.620.348-65-1565-1304C.resize/img.jpg">
+    </div> -->
+
+
+    <div class="divider"></div>
+
+    <div *ngFor="let item of jobHistory; let i = index" class="work-item">
+        <h2 class="company" [style.--delay]="(i+1) + 's'" *ngIf="item.company">{{item.company}}</h2>
+        <div class="item" (mouseenter)="onHover(i)" (mouseleave)="onHover(null)">
+            <div class="circle" [class.active]="hoveredIndex === i">
+                <div class="arrow">&#8594;</div>
+            </div>
+            <p class="working-period-and-position" [class.active]="hoveredIndex === i">
+                <strong>
+                    {{item.startDate}} &#8594; {{item.endDate}} --- {{item.position}}
+                </strong>
+            </p>
+        </div>
+        <p *ngIf="item.description">{{item.description}}</p>
+        <p class="demo-work" *ngIf="item.linkDemo">{{item.linkMessage}}
+            <a href="{{item.linkDemo}}">HERE</a>
+        </p>
+        <div *ngIf="item.divider" [style.--delay]="(i+1) + 's'" class="divider"></div>
+    </div>
+
+    <div class="divider "></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

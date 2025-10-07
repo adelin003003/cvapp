@@ -1,0 +1,150 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+h2 {
+    color: #555;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.contact-info, .education, .work-experience, .skills, .hobbies {
+    margin-bottom: 20px;
+}
+.skills-list, .hobbies-list {
+    list-style: none;
+    padding: 0;
+}
+.skills-list li, .hobbies-list li {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+
+} */
+:host {
+    --cardTitle: var(--title);
+    --cardTextSize: 20px;
+}
+
+
+.content {
+    /* display: flex; */
+    top: 40vh;
+    left: 40vw;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    /* align-self: center; */
+    /* Vertical centering */
+    /* justify-content: center; */
+    /* Horizontal centering (optional) */
+    /* height: 100%; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    width: 22vw;
+    height: 10vh;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 20px;
+    font-size: var(--cardTextSize);
+}
+
+.card::after {
+    /* content: 'You hovered!'; */
+    /* display: none; */
+    /* content: var(--cardTitle); */
+
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap; */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    font-size: calc(var(--cardTextSize) * 1.5);
+}
+
+
+.sectionText {
+    position: absolute;
+    width: 50vw;
+    background-color: aqua;
+    z-index: 2;
+    /* transition: .4s; */
+}
+
+/* .card:hover .sectionText {
+  display: block;
+  background-color: #d0f0d0;
+  margin-top: 10px;
+} */
+
+
+/* .hover-card {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 120%; 
+  left: 0;
+  width: 220px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+.hover-card:hover .popup {
+  display: block;
+} */

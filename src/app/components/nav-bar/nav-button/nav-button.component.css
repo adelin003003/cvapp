@@ -1,0 +1,42 @@
+:host {
+  --nav-btn-color: #53120d;
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+    margin: 30px;
+}
+
+.nav-btn:hover {
+    color: var(--nav-btn-color);
+}
+
+.nav-btn::before {
+    margin-left: auto;
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--nav-btn-color);
+    display: block;
+    transition: 0.5s;
+}
+
+.nav-btn:hover::after,
+.nav-btn:hover::before {
+    width: 100%;
+}
+
+.nav-btn.active {
+    color: var(--nav-btn-color);
+}

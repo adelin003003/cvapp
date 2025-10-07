@@ -1,0 +1,34 @@
+*{
+    user-select: none;
+    /* -webkit-user-drag: none; */
+}
+
+.nav-bar {
+    /* display: flex;
+    flex-direction: column;
+    gap: 300px; */
+    margin-left: 20px;
+    /* top: 50%; */
+    /* position: absolute; */
+    max-width: 150px;
+    
+}
+
+.nav-bar-navigation-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+    /* height: 100vh; */
+    /* margin-top: 200px; */
+    /* top: 50%; */
+}
+
+.home-btn {
+    /* color: red; */
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}

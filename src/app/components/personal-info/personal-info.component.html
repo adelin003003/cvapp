@@ -1,0 +1,71 @@
+<!-- <div class="container">
+    <div class="header">
+        <h1>Your Name</h1>
+        <p>Professional Title</p>
+    </div>
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: your.emailexample.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>Address: 123 Your Street, City, Country</p>
+    </div>
+
+    <div class="profile">
+        <h2>Profile</h2>
+        <p>Brief summary about yourself, your professional experience, and your career objectives. This section
+            should provide a quick overview of your skills, experience, and what makes you unique.</p>
+    </div>
+
+    <div class="education">
+        <h2>Education</h2>
+        <p><strong>Degree Name</strong> - University Name, Year of Graduation</p>
+        <p>Description of your studies and achievements, any relevant projects, or honors.</p>
+    </div>
+
+
+
+
+
+    <div class="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <ul class="hobbies-list">
+            <li>Hobby 1</li>
+            <li>Hobby 2</li>
+            <li>Hobby 3</li>
+            <li>Hobby 4</li>
+        </ul>
+    </div>
+</div> -->
+
+
+
+<div class="content">
+    <div class="container">
+
+        <div *ngFor="let item of jobHistory1; let i = index" class="card" 
+        (click)="onClickSectionText(i)">
+            <div class="sectionTitle">
+                <h2>
+                    {{item.sectionTitle}}</h2>
+            </div>
+            <div class="sectionText" *ngIf="item.visible" @fadeInOut>
+                <p>{{item.line1}} </p>
+                <p>{{item.line2}} </p>
+                <p>{{item.line3}} </p>
+                <p>{{item.line4}} </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- <div class="hover-card">
+  <div class="title">Hover me</div>
+  <div class="popup">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget leo nec lorem.
+  </div>
+</div> -->

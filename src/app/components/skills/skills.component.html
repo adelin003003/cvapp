@@ -1,0 +1,25 @@
+<div class="skills-content">
+    <div class="carousel-container">
+        <div class="carousel-big">
+            <div class="carousel-item" *ngFor="let item of bigCircle; let i = index"
+                [style.transform]="getBigCircleTransform(i)">
+                {{ item }}
+            </div>
+        </div>
+        <div class="carousel-small">
+            <div class="carousel-item" *ngFor="let item of smallCircle; let i = index"
+                [style.transform]="getSmallCircleTransform(i)">
+                {{ item }}
+            </div>
+        </div>
+    </div>
+    <div class="information-container">
+        <div class="information-icon" (click)="informationButtonClick()">&#8505;</div>
+        <div class="information-content" *ngIf="infoBtnVisible">
+            <ul class="info-list">
+                <li>Put the cursor over any bubble for a better view.</li>
+                <li>Use &#8592; and &#8594; to play with the bubbles.</li>
+            </ul>
+        </div>
+    </div>
+</div>
