@@ -24,20 +24,20 @@ export class PersonalInfoComponent {
   @HostBinding('@routeAnimations') animation = true;
 
 
-  jobHistory1 = [
+  item = [
     {
       sectionTitle: "Contact Information",
-      line1: "Telus International",
-      line2: "01/10/2024",
-      line3: "Present",
-      line4: "Software Developer",
+      line1: "Email: adelin_andrei_99@yahoo.ro",
+      line2: "Phone: (+40) 748045003",
+      line3: "LinkedIn",
+      // line4: "Software Developer",
       visible: false
     },
     {
       sectionTitle: "Profile",
-      line1: "Telus International",
-      line2: "01/10/2024",
-      line3: "Present",
+      line1: "I studied at the Faculty of Mathematics and Informatics from Brasov, graduated in Applied Informatics. I'm looking forward to learning new programming languages and improve my software development skills.",
+      // line2: "01/10/2024",
+      // line3: "Present",
       visible: false
     },
     {
@@ -55,8 +55,8 @@ export class PersonalInfoComponent {
   ]
 
 
-  onClickSectionText(index: any) {
-    this.jobHistory1[index].visible = !this.jobHistory1[index].visible;
-  }
+  // onClickSectionText(index: any) {
+  //   this.jobHistory1[index].visible = !this.jobHistory1[index].visible;
+  // }
 
 }
