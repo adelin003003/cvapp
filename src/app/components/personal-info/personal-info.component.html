@@ -39,74 +39,71 @@
     </div>
 </div> -->
 
-
-
 <div class="content">
-    <div class="container">
+  <div class="container">
+    <div class="card card-contact div1">
+      <div class="card-content contact">
+        <p>{{ item[0].sectionTitle }}</p>
+      </div>
+      <div class="card-content contact-info">
+        <p>{{ item[0].line1 }}</p>
+        <p>{{ item[0].line2 }}</p>
+        <a [href]="item[0].line4" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+          &#8594; {{ item[0].line3 }} &#8592;
+        </a>
+      </div>
+    </div>
 
-        <div class="card card-contact div1">
-            <div class="card-content contact">
-                <p>{{item[0].sectionTitle}} </p>
-            </div>
-            <div class="card-content contact-info">
-                <p>{{item[0].line1}} </p>
-                <p>{{item[0].line2}} </p>
-                <p>{{item[0].line3}} </p>
-            </div>
-        </div>
+    <div class="card card-contact div2">
+      <div class="card-content contact">
+        <p>{{ item[1].sectionTitle }}</p>
+      </div>
+      <div class="card-content contact-info">
+        <p>{{ item[1].line1 }}</p>
+        <p>{{ item[1].line2 }}</p>
+        <p>{{ item[1].line3 }}</p>
+      </div>
+    </div>
 
-        <div class="card card-contact div2">
-            <div class="card-content contact">
-                <p>{{item[1].sectionTitle}} </p>
-            </div>
-            <div class="card-content contact-info">
-                <p>{{item[1].line1}} </p>
-                <p>{{item[1].line2}} </p>
-                <p>{{item[1].line3}} </p>
-            </div>
-        </div>
+    <div class="card card-contact div3">
+      <div class="card-content contact">
+        <p>{{ item[2].sectionTitle }}</p>
+      </div>
+      <div class="card-content contact-info">
+        <p>{{ item[2].line1 }}</p>
+        <p>{{ item[2].line2 }}</p>
+        <p>{{ item[2].line3 }}</p>
+      </div>
+    </div>
 
-        <div class="card card-contact div3">
-            <div class="card-content contact">
-                <p>{{item[2].sectionTitle}} </p>
-            </div>
-            <div class="card-content contact-info">
-                <p>{{item[2].line1}} </p>
-                <p>{{item[2].line2}} </p>
-                <p>{{item[2].line3}} </p>
-            </div>
-        </div>
+    <div class="card card-contact div4">
+      <div class="card-content contact">
+        <p>{{ item[3].sectionTitle }}</p>
+      </div>
+      <div class="card-content contact-info">
+        <p>{{ item[3].line1 }}</p>
+        <p>{{ item[3].line2 }}</p>
+        <p>{{ item[3].line3 }}</p>
+      </div>
+    </div>
 
-        <div class="card card-contact div4">
-            <div class="card-content contact">
-                <p>{{item[3].sectionTitle}} </p>
-            </div>
-            <div class="card-content contact-info">
-                <p>{{item[3].line1}} </p>
-                <p>{{item[3].line2}} </p>
-                <p>{{item[3].line3}} </p>
-            </div>
-        </div>
-
-        <!-- <div *ngFor="let item of jobHistory1; let i = index" class="card" 
+    <!-- <div *ngFor="let item of jobHistory1; let i = index" class="card" 
         > -->
-        <!-- (click)="onClickSectionText(i)" -->
-        <!-- <div class="sectionTitle"> -->
-        <!-- <h2> -->
-        <!-- {{item.sectionTitle}}</h2> -->
-        <!-- </div>
+    <!-- (click)="onClickSectionText(i)" -->
+    <!-- <div class="sectionTitle"> -->
+    <!-- <h2> -->
+    <!-- {{item.sectionTitle}}</h2> -->
+    <!-- </div>
             <div class="sectionText" *ngIf="item.visible" @fadeInOut> -->
-        <!-- <p>{{item.line1}} </p>
+    <!-- <p>{{item.line1}} </p>
                 <p>{{item.line2}} </p>
                 <p>{{item.line3}} </p>
                 <p>{{item.line4}} </p> -->
-        <!-- </div> -->
+    <!-- </div> -->
 
-        <!-- </div> -->
-
-    </div>
+    <!-- </div> -->
+  </div>
 </div>
-
 
 <!-- <div class="hover-card">
   <div class="title">Hover me</div>

@@ -30,6 +30,7 @@ export class PersonalInfoComponent {
       line1: "Email: adelin_andrei_99@yahoo.ro",
       line2: "Phone: (+40) 748045003",
       line3: "LinkedIn",
+      line4: "https://www.linkedin.com/in/adelin-andrei-%C8%99oaic%C4%83-a4b6352b7/",
       // line4: "Software Developer",
       visible: false
     },
